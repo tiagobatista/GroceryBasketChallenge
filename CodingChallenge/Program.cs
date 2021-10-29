@@ -38,7 +38,9 @@ namespace CodingChallenge
 
                     var checkoutMessage = checkoutService.ProcessBasket(basket);
 
+                    Console.WriteLine("\n\n ### Your receipt ###\n\n");
                     Console.WriteLine(checkoutMessage);
+                    Console.WriteLine("\n\n ### End of receipt ###\n\n");
                 }
                 catch (ProductNotFoundException ex)
                 {
